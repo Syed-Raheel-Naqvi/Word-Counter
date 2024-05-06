@@ -4,7 +4,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-console.log(chalk.bold.italic.cyanBright("\n\t\t WORD COUNTER \n"));
+console.log(chalk.bold.italic.bgBlue("\n\t\t WORD COUNTER \n"));
 
 // Declare a constant  'awnser' and assign it to the result of inquirer.prompt function
 
@@ -29,5 +29,5 @@ if (!answers.Sentence) {
 
 //Print the word count of the sentence to the console
 else {
-    console.log(chalk.greenBright.bold(`\n\tYour sentence word count is: `) + chalk.yellowBright(`${words.length}`));
+    console.log((`\n\tYour sentence word count is: `) + chalk.cyanBright(`${words.length}`));
 }
